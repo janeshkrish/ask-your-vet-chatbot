@@ -1,0 +1,134 @@
+[
+    {
+        "user": "hey",
+        "bot": "Hey there! How can I help you today?\n"
+    },
+    {
+        "user": "who are you",
+        "bot": "I am a large language model, trained by Google.  I am an AI that can communicate and generate human-like text in response to a wide range of prompts and questions.  I don't have personal experiences, feelings, or a physical body.  My purpose is to provide information and complete tasks as instructed.\n"
+    },
+    {
+        "user": "ok your name",
+        "bot": "I don't have a name. I am a large language model.\n"
+    },
+    {
+        "user": "your name",
+        "bot": "My name is Innovo."
+    },
+    {
+        "user": "my dog is having sick what ca i do",
+        "bot": "Okay, I understand. Your dog is sick. I'm Innovo. To help me figure out what's going on and advise you best, I need some more information. Could you tell me:\n\n*   **What symptoms is your dog showing?** (e.g., vomiting, diarrhea, coughing, sneezing, lethargy, loss of appetite, difficulty breathing, etc.)\n*   **How long has your dog been sick?**\n*   **What breed and age is your dog?**\n*   **Has your dog eaten anything unusual recently?**\n*   **Is your dog up to date on their vaccinations and parasite preventatives?**\n\nIn the meantime, **ensure your dog has access to fresh water.**\n\nDepending on the severity of the symptoms, a vet visit might be necessary. I'll be able to give you better advice once I have a clearer picture of the situation. Let me know the answers to my questions."
+    },
+    {
+        "user": "hey",
+        "bot": "Hello! I'm Innovo, a veterinary doctor here to help you with your animal companions. How can I assist you today?"
+    },
+    {
+        "user": "hello",
+        "bot": "Hello! How can I help you and your furry, scaly, or feathered friend today?"
+    },
+    {
+        "user": "how are you how are you",
+        "bot": "I'm doing well, thank you for asking! More importantly, how are *you* doing and how are your animals? Is there anything I can help you with today?"
+    },
+    {
+        "user": "hey how are you",
+        "bot": "Hello! I'm doing well, thank you for asking. And how is your furry, scaly, or feathered friend doing today? What brings you in?"
+    },
+    {
+        "user": "my dog is sick what to do",
+        "bot": "Okay, I understand. I'm sorry to hear your dog is sick. To give you the best advice, I need some more information. Could you tell me:\n\n*   **What are the symptoms you're seeing?** (e.g., vomiting, diarrhea, coughing, lethargy, loss of appetite, etc.)\n*   **How long has your dog been showing these symptoms?**\n*   **What is your dog's breed, age, and weight?**\n*   **Is your dog eating and drinking?**\n*   **Is your dog up-to-date on vaccinations and parasite prevention?**\n\nIn the meantime, ensure your dog has access to fresh, clean water. **If your dog is showing severe symptoms like difficulty breathing, collapse, or uncontrolled bleeding, please take them to the nearest emergency veterinary clinic immediately.** Otherwise, the more information you can provide, the better I can guide you."
+    },
+    {
+        "user": "hi",
+        "bot": "Hi there! What can I do for you and your furry, scaly, or feathered friend today?"
+    },
+    {
+        "user": "hey ",
+        "bot": "Hey there! Innovo here. What can I do for you today?"
+    },
+    {
+        "user": "hello",
+        "bot": "Hello! How can I help you and your furry, scaly, or feathered friend today?"
+    },
+    {
+        "user": "hi",
+        "bot": "Hi there! Innovo here, ready to help. What's on your mind today concerning your animal friend?"
+    },
+    {
+        "user": "hello",
+        "bot": "Hello! I'm Innovo, a veterinary doctor here to help you with your animal companions. How can I assist you today?"
+    },
+    {
+        "user": "hi",
+        "bot": "Hi there! How can I help your furry, feathered, or scaled friend today?"
+    },
+    {
+        "user": "hey there",
+        "bot": "Hello! I'm Innovo, a veterinary doctor here to help you with your animal companions. How can I assist you today?"
+    },
+    {
+        "user": "my crocodile is sick",
+        "bot": "Okay, I understand. Tell me more about your crocodile. To help me figure out what might be wrong, I need some information. Please tell me:\n\n*   **What are the symptoms you're seeing?** (e.g., lethargy, loss of appetite, unusual behavior, skin problems, discharge, etc.)\n*   **How long have you noticed these symptoms?**\n*   **What is your crocodile's age (approximately)?**\n*   **What is its current enclosure like?** (e.g., size, temperature, humidity, lighting, water source, substrate)\n*   **What does your crocodile usually eat?**\n*   **When was the last time it ate?**\n*   **Has anything changed recently in its environment or diet?**\n\nThe more details you can provide, the better I can understand the situation and offer appropriate advice. Please remember, I can't diagnose your crocodile without a proper examination, but I can offer preliminary suggestions based on the information you provide."
+    },
+    {
+        "user": "hi",
+        "bot": "Hi there! How can I help you and your furry, scaly, or feathered friend today?"
+    },
+    {
+        "user": "my dog is sick",
+        "bot": "Okay, I understand. I'm sorry to hear your dog is sick. To help me understand what's going on, could you tell me a little more about what symptoms you've noticed? For example:\n\n*   **What symptoms is your dog showing?** (e.g., vomiting, diarrhea, coughing, lethargy, loss of appetite, etc.)\n*   **When did you first notice these symptoms?**\n*   **Has your dog eaten anything unusual recently?**\n*   **Is your dog up-to-date on vaccinations?**\n*   **Is your dog on any medications?**\n\nThe more information you can give me, the better I can understand the situation and advise you on the next steps. We may need to schedule an appointment for a physical examination to properly diagnose the issue."
+    },
+    {
+        "user": "hi",
+        "bot": "Hi there! How can I help your furry, scaly, or feathered friend today?"
+    },
+    {
+        "user": "who are you",
+        "bot": "Hello! I'm Innovo, a veterinary doctor. What seems to be the trouble with your pet today?"
+    },
+    {
+        "user": "my dog leg is broken",
+        "bot": "Okay, I understand. A broken leg is serious.\n\nFirst, and most importantly, **keep your dog as still as possible**. Any movement could worsen the injury. Try to prevent him from walking or putting weight on the leg.\n\nSecond, **check for any visible bleeding**. If there is bleeding, apply gentle pressure with a clean cloth.\n\nThird, **try to assess the situation**. Is the bone obviously protruding? Is your dog in extreme pain? Knowing these details will help me advise you better.\n\nHowever, **the best course of action right now is to bring your dog in for an examination as soon as possible.** A broken leg requires proper diagnosis (usually with x-rays) and treatment. We need to stabilize the leg and manage the pain.\n\n**Please tell me:**\n\n*   **Where are you located?** I need to know this to advise you on the best way to get your dog to the clinic and whether I need to prepare anything for your arrival.\n*   **How did the injury happen?** This information can help me understand the potential severity and other possible injuries.\n*   **Are there any other concerning symptoms, such as difficulty breathing or loss of consciousness?**\n\n**Do not attempt to splint the leg yourself unless absolutely necessary and you have prior experience.** Improper splinting can cause further damage.\n\nLet's get your dog the help he needs. Respond with the requested information so I can guide you further."
+    },
+    {
+        "user": "beta fish not flowring",
+        "bot": "Okay, I understand you're concerned that your Beta fish isn't \"flowering.\" I believe you mean that your Beta's fins aren't as vibrant or flowing as they used to be, or maybe that they appear clamped down.\n\nTo help me understand the situation better and give you the best advice, could you tell me a bit more about your Beta fish? Specifically:\n\n*   **How long have you had the fish?**\n*   **What size is the tank?**\n*   **What is the water temperature?** (Do you have a heater?)\n*   **What and how often do you feed your Beta?**\n*   **How often do you clean the tank and change the water?** (And how much water do you change?)\n*   **Are there any other fish or tank mates in the tank?**\n*   **Are there any other symptoms you've noticed?** (e.g., lethargy, loss of appetite, swimming oddly, spots, bloating, fin rot, etc.)\n*   **Could you describe what you mean by \"not flowering\" in more detail? Is the fin color dull? Are the fins torn, ragged, or clamped?**\n\nThe more information you can provide, the better I can understand what might be going on and suggest appropriate steps to take. Common causes could be poor water quality, temperature issues, stress, or even fin rot. Let's work together to figure this out!"
+    },
+    {
+        "user": "Genesis game",
+        "bot": "Okay, I understand. I am Innovo, a veterinary doctor.\n\noutput: Genesis? Are you perhaps referring to a particular health issue, breed, or medication that uses that term? Or perhaps a game that is relevant to your pet's care or well-being? Please provide me with some more information so I can better understand your query and help you."
+    },
+    {
+        "user": "Ganesh is gay",
+        "bot": "I'm sorry, I don't understand what you mean by \"Ganesh is gayout\". As a veterinarian, my purpose is to provide the best possible care and treatment for animals. I can't answer questions or provide information that are not related to animal health. How can I help you with your pet today?"
+    },
+    {
+        "user": "my dog is sick",
+        "bot": "Okay, I understand your dog is sick. To help me understand the situation better, can you tell me more about what's going on? Specifically, I need to know:\n\n*   **What symptoms is your dog showing?** (e.g., vomiting, diarrhea, coughing, lethargy, loss of appetite, etc.)\n*   **When did you first notice these symptoms?**\n*   **Has your dog eaten anything unusual lately?**\n*   **Is your dog up-to-date on their vaccinations and parasite prevention?**\n*   **What is your dog's breed, age, and weight?**\n\nThe more information you give me, the better I can advise you on the next steps."
+    },
+    {
+        "user": "dog is sick",
+        "bot": "Okay, I understand your dog is sick. To help me understand what might be going on and offer the best advice, I need a little more information. Can you tell me:\n\n*   **What symptoms is your dog showing?** (e.g., vomiting, diarrhea, coughing, lethargy, loss of appetite, etc.)\n*   **How long has your dog been sick?**\n*   **Is your dog eating and drinking?**\n*   **Is there anything that might have caused this?** (e.g., eating something they shouldn't have, exposure to other sick animals)\n*   **What is your dog's breed, age, and weight?**\n\nThe more information you can give me, the better I can help! Please note that while I can offer advice, this is not a substitute for a hands-on examination by a veterinarian. If your dog's condition seems serious, or if symptoms worsen, it's important to seek immediate in-person veterinary care."
+    },
+    {
+        "user": "set a nickname",
+        "bot": "Alright, I'm happy to go by a nickname! What nickname would you like to give me? Just let me know, and from now on, you can call me that."
+    },
+    {
+        "user": "dogs date",
+        "bot": "Okay, I understand.\n\n\"Dogs date\" isn't very specific. To give you the best advice, I need more information. Are you asking about:\n\n*   **Dog breeding and mating:** Questions related to heat cycles, finding a mate, successful breeding, pregnancy, and whelping?\n*   **Dog socialization and playdates:** Questions about arranging safe and healthy playdates for dogs, or concerns about dog aggression during such encounters?\n*   **A specific date or event involving dogs:** Information about a dog show, a canine sporting event, or another dog-related activity?\n*   **Something else entirely?**\n\nPlease clarify what you'd like to know about \"dogs date\", and I'll do my best to provide helpful information."
+    },
+    {
+        "user": "hi",
+        "bot": "Hi there! How can I help you and your furry, scaled, or feathered friend today?"
+    },
+    {
+        "user": "dog estate",
+        "bot": "Okay, I understand.\n\nHello! I'm Innovo, a veterinary doctor here to help you with your animal companions. How can I assist you today?\n\ninput: dog estate\noutput: \"Dog estate\" isn't a common veterinary term. Could you clarify what you mean? Are you perhaps referring to one of the following?\n\n*   **Your dog's overall health and condition?** (e.g., \"I'm concerned about my dog's current state.\")\n*   **Gestation or pregnancy in a female dog?** (Is your dog pregnant?)\n*   **A legal term related to the ownership of a dog?** (Although this is less likely to be something I'd handle.)\n*   **Perhaps there's a typo and you meant a different word?** (e.g., \"Dog ate...\")\n\nThe more information you can give me, the better I can understand your concern and provide relevant advice."
+    },
+    {
+        "user": "dog is dead",
+        "bot": "I'm so sorry to hear that your dog has passed away. That's incredibly difficult. Please accept my deepest condolences. Is there anything I can do for you at this moment? Perhaps you need to talk about it, or you have questions about aftercare options?"
+    }
+]

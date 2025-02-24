@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovo - Veterinary Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            background-image: url('https://thumbs.dreamstime.com/b/cat-theme-seamless-background-pattern-heart-shaped-animal-paw-footprints-claw-scratches-50687719.jpg'); /* Add a pet-themed background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .chat-container {
+            width: 90%;
+            max-width: 600px;
+            height: 80vh;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(10px);
+        }
+        .chat-header {
+            background: #0072ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chat-header i {
+            margin-right: 10px;
+        }
+        .chat-box {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            background: #f4f4f4;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            background: white;
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            outline: none;
+            font-size: 16px;
+        }
+        .chat-input button {
+            margin-left: 10px;
+            padding: 14px;
+            background: #0072ff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .chat-input button:hover {
+            background: #005bb5;
+        }
+        .voice-button {
+            margin-left: 10px;
+            padding: 14px;
+            background: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .voice-button:hover {
+            background: #e64a19;
+        }
+        .chat-message {
+            margin-bottom: 10px;
+            padding: 14px;
+            border-radius: 12px;
+            max-width: 75%;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .user-message {
+            background: #D1E7DD;
+            align-self: flex-end;
+        }
+        .bot-message {
+            background: #FFCDD2;
+            align-self: flex-start;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <i class="fas fa-paw"></i> Innovo - Veterinary Chatbot
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask a question...">
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            <button class="voice-button" onclick="startVoice()"><i class="fas fa-microphone"></i></button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            let userInput = document.getElementById("user-input").value;
+            if (userInput.trim() === "") return;
+            
+            let chatBox = document.getElementById("chat-box");
+            
+            let userMessage = document.createElement("div");
+            userMessage.className = "chat-message user-message";
+            userMessage.innerText = userInput;
+            chatBox.appendChild(userMessage);
+            
+            document.getElementById("user-input").value = "";
+            chatBox.scrollTop = chatBox.scrollHeight;
+            
+            fetch("/get_response", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => response.json())
+            .then(data => {
+                let botMessage = document.createElement("div");
+                botMessage.className = "chat-message bot-message";
+                botMessage.innerText = data.response;
+                chatBox.appendChild(botMessage);
+                chatBox.scrollTop = chatBox.scrollHeight;
+                speakResponse(data.response);
+            });
+        }
+        
+        function startVoice() {
+            if (!('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)) {
+                alert("Your browser does not support speech recognition. Please try using a different browser.");
+                return;
+            }
+
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = 'en-US';
+            recognition.start();
+
+            recognition.onstart = function() {
+                console.log("Voice recognition started. Speak into the microphone.");
+            };
+
+            recognition.onresult = function(event) {
+                const transcript = event.results[0][0].transcript;
+                console.log("Voice input received: " + transcript);
+                document.getElementById("user-input").value = transcript;
+                sendMessage();
+            };
+
+            recognition.onerror = function(event) {
+                console.error("Voice input error: " + event.error);
+                alert("Voice input not working: " + event.error);
+            };
+
+            recognition.onend = function() {
+                console.log("Voice recognition ended.");
+            };
+        }
+        
+        function speakResponse(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>
